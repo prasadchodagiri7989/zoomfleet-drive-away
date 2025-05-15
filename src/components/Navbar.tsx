@@ -40,6 +40,11 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
+            <Link to="/profile">
+              <Button variant="outline" size="sm" className="flex items-center">
+                <User className="h-4 w-4 mr-2" /> Profile
+              </Button>
+            </Link>
             <Link to="/login">
               <Button variant="outline" size="sm">Login</Button>
             </Link>
@@ -67,6 +72,7 @@ const Navbar = () => {
             <Link to="/category/hatchback" className="px-2 py-1 text-zoomfleet-blue pl-4" onClick={toggleMenu}>Hatchbacks</Link>
             <Link to="/category/luxury" className="px-2 py-1 text-zoomfleet-blue pl-4" onClick={toggleMenu}>Luxury</Link>
             <Link to="/about" className="px-2 py-1 text-zoomfleet-blue" onClick={toggleMenu}>About Us</Link>
+            <Link to="/profile" className="px-2 py-1 text-zoomfleet-blue" onClick={toggleMenu}>Profile</Link>
             <div className="flex space-x-2 pt-2">
               <Link to="/login" onClick={toggleMenu} className="w-full">
                 <Button variant="outline" size="sm" className="w-full">Login</Button>

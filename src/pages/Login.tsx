@@ -1,15 +1,17 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/components/ui/use-toast';
 import { Car } from 'lucide-react';
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const Login = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -33,6 +35,14 @@ const Login = () => {
     }));
   };
 
+  const fillSampleCredentials = () => {
+    setFormData({
+      email: 'demo@zoomfleet.com',
+      password: 'demo123',
+      rememberMe: false
+    });
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -44,6 +54,8 @@ const Login = () => {
         description: "Welcome back to ZoomFleet!",
       });
       setIsSubmitting(false);
+      // Navigate to profile page after successful login
+      navigate('/profile');
     }, 1000);
   };
 
@@ -69,6 +81,25 @@ const Login = () => {
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          {/* Sample Credentials Alert */}
+          <Alert className="mb-6 bg-blue-50 border-blue-200">
+            <AlertDescription className="text-blue-800">
+              <div className="flex flex-col space-y-2">
+                <span className="font-medium">Sample Login Credentials:</span>
+                <span>Email: demo@zoomfleet.com</span>
+                <span>Password: demo123</span>
+                <Button 
+                  variant="outline" 
+                  className="mt-2 text-sm border-blue-300 hover:bg-blue-100" 
+                  size="sm"
+                  onClick={fillSampleCredentials}
+                >
+                  Fill Sample Credentials
+                </Button>
+              </div>
+            </AlertDescription>
+          </Alert>
+
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <Label htmlFor="email" className="block text-sm font-medium text-gray-700">
