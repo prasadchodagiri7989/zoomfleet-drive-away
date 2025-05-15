@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import SearchForm from '@/components/SearchForm';
@@ -87,7 +88,7 @@ const Cars = () => {
     setCars(sortedCars);
   }, [initialLocation, filters, sortOption]);
 
-  const handleFilterChange = (category: keyof typeof filters, option: string) => {
+  const handleFilterChange = (category: 'types' | 'transmission' | 'fuelType', option: string) => {
     setFilters(prev => ({
       ...prev,
       [category]: {
