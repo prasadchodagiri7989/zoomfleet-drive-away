@@ -16,7 +16,7 @@ const Home = () => {
       id: 1,
       name: 'Emma Johnson',
       location: 'New York',
-      text: 'ZoomFleet made our family vacation a breeze. The SUV was clean, comfortable, and perfect for our road trip.',
+      text: 'Cificap made our family vacation a breeze. The SUV was clean, comfortable, and perfect for our road trip.',
       rating: 5,
     },
     {
