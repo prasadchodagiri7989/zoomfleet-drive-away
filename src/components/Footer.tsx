@@ -83,15 +83,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-zoomfleet-yellow mt-0.5" />
-                <span className="text-gray-300">123 Fleet Street, Car City, State 12345</span>
+                <span className="text-gray-300">18-230, Adarsh Nagar, H B Colony, Visakhapatnam, Andhra Pradesh 530022</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-zoomfleet-yellow" />
-                <span className="text-gray-300">(123) 456-7890</span>
+                <span className="text-gray-300">+91 939 396 8874</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-zoomfleet-yellow" />
-                <span className="text-gray-300">info@zoomfleet.com</span>
+                <span className="text-gray-300">sriramtravelsbus@gmail.com</span>
               </li>
             </ul>
           </div>
