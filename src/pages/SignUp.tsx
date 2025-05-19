@@ -100,7 +100,7 @@ const SignUp = () => {
     setTimeout(() => {
       toast({
         title: "Account created successfully",
-        description: "Welcome to ZoomFleet! You're now registered.",
+        description: "Welcome to Sriram Travels! You're now registered.",
       });
       setIsSubmitting(false);
     }, 1000);
@@ -112,7 +112,7 @@ const SignUp = () => {
         <div className="flex justify-center">
           <Link to="/" className="flex items-center space-x-2">
             <Car className="h-8 w-8 text-zoomfleet-blue" />
-            <span className="font-bold text-2xl text-zoomfleet-blue">ZoomFleet</span>
+            <span className="font-bold text-2xl text-zoomfleet-blue">Sriram Travels</span>
           </Link>
         </div>
         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-zoomfleet-blue">

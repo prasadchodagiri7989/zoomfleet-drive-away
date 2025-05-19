@@ -48,7 +48,7 @@ const previousBookings = [
 // Mock user data
 const userData = {
   name: 'John Doe',
-  email: 'demo@zoomfleet.com',
+  email: 'demo@sriramtravels.com',
   phone: '+1 (555) 123-4567',
   joinDate: new Date(2023, 5, 15),
   totalBookings: 3,

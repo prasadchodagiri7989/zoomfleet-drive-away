@@ -30,7 +30,7 @@ const Home = () => {
       id: 3,
       name: 'Sophia Rodriguez',
       location: 'Miami',
-      text: 'I rent cars frequently and ZoomFleet offers the best variety of luxury vehicles. My go-to rental service.',
+      text: 'I rent cars frequently and Sriram Travels offers the best variety of luxury vehicles. My go-to rental service.',
       rating: 5,
     },
   ];
@@ -144,7 +144,7 @@ const Home = () => {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="heading-lg mb-4">Why Choose ZoomFleet</h2>
+            <h2 className="heading-lg mb-4">Why Choose Sriram Travels</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               We strive to provide exceptional service and make your car rental experience as smooth as possible.
             </p>

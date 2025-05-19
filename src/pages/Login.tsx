@@ -51,7 +51,7 @@ const Login = () => {
     setTimeout(() => {
       toast({
         title: "Login Successful",
-        description: "Welcome back to ZoomFleet!",
+        description: "Welcome back to Sriram Travels!",
       });
       setIsSubmitting(false);
       // Navigate to profile page after successful login
@@ -65,7 +65,7 @@ const Login = () => {
         <div className="flex justify-center">
           <Link to="/" className="flex items-center space-x-2">
             <Car className="h-8 w-8 text-zoomfleet-blue" />
-            <span className="font-bold text-2xl text-zoomfleet-blue">ZoomFleet</span>
+            <span className="font-bold text-2xl text-zoomfleet-blue">Sriram Travels</span>
           </Link>
         </div>
         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-zoomfleet-blue">
@@ -86,7 +86,7 @@ const Login = () => {
             <AlertDescription className="text-blue-800">
               <div className="flex flex-col space-y-2">
                 <span className="font-medium">Sample Login Credentials:</span>
-                <span>Email: demo@zoomfleet.com</span>
+                <span>Email: demo@sriramtravels.com</span>
                 <span>Password: demo123</span>
                 <Button 
                   variant="outline" 

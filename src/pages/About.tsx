@@ -42,7 +42,7 @@ const About = () => {
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              About ZoomFleet
+              About Sriram Travels
             </h1>
             <p className="text-lg md:text-xl text-gray-300">
               Revolutionizing the car rental experience with quality vehicles and exceptional service since 2015.
@@ -58,19 +58,19 @@ const About = () => {
             <div>
               <h2 className="heading-lg mb-6">Our Story</h2>
               <p className="text-gray-700 mb-4">
-                ZoomFleet was founded in 2015 with a simple mission: to make car rentals hassle-free, affordable, and enjoyable. What started as a small fleet of just 10 cars has grown into a nationwide service with thousands of vehicles across multiple categories.
+                Sriram Travels was founded in 2015 with a simple mission: to make car rentals hassle-free, affordable, and enjoyable. What started as a small fleet of just 10 cars has grown into a nationwide service with thousands of vehicles across multiple categories.
               </p>
               <p className="text-gray-700 mb-4">
                 Our founder, Sarah Johnson, experienced firsthand the frustrations of traditional car rental services - long waiting lines, hidden fees, and disappointing vehicles. She decided to create a company that prioritizes transparency, quality, and customer satisfaction.
               </p>
               <p className="text-gray-700">
-                Today, ZoomFleet continues to innovate in the car rental industry, leveraging technology to provide seamless bookings, verified quality vehicles, and 24/7 customer support for all your transportation needs.
+                Today, Sriram Travels continues to innovate in the car rental industry, leveraging technology to provide seamless bookings, verified quality vehicles, and 24/7 customer support for all your transportation needs.
               </p>
             </div>
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1591456983933-ea95b7f93a9b?q=80&w=1471"
-                alt="ZoomFleet Office"
+                alt="Sriram Travels Office"
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute -bottom-6 -left-6 bg-zoomfleet-yellow p-6 rounded-lg shadow-lg hidden md:block">

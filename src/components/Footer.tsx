@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <Car className="h-6 w-6 text-zoomfleet-yellow" />
-              <span className="font-bold text-xl text-white">ZoomFleet</span>
+              <span className="font-bold text-xl text-white">Sriram Travels</span>
             </Link>
             <p className="text-gray-300 mb-4">
               Premium car rental services for all your travel needs. Experience comfort and style on the road.
@@ -99,7 +99,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-12 pt-6">
           <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} ZoomFleet. All rights reserved.
+            © {new Date().getFullYear()} SriRam Travels. All rights reserved.
           </p>
         </div>
       </div>
