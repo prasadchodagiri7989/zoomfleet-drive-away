@@ -117,7 +117,6 @@ body {
 }
 
 .loading-window {
-  animation: loadingEntranceExit 4s ease-in-out forwards;
   background: var(--background-color);
   color: var(--car-color);
   height: 200px;
@@ -273,4 +272,69 @@ body {
     transform: translateX(100vw);
     opacity: 0;
   }
+}
+.progress-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInOut 4s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1; /* At 0.5s */
+  }
+  80.5% {
+    opacity: 1; /* Stay visible till 3.5s */
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.progress-text {
+  font-size: 14px;
+  color: var(--car-color);
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar .fill {
+  height: 100%;
+  width: 0%;
+  background-color: var(--car-color);
+  animation: fillProgress 4s linear forwards;
+  border-radius: 3px;
+}
+
+@keyframes fillProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.car-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: loadingEntranceExit 4s ease-in-out forwards;
+  position: relative;
+  height: 100px;
 }

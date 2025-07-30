@@ -28,6 +28,8 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
